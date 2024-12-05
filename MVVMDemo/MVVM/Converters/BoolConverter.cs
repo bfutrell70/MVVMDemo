@@ -20,7 +20,13 @@ namespace MVVMDemo.MVVM.Converters
 
         public object? ConvertBack(object? value, Type targetType, object? parameter, CultureInfo culture)
         {
-            return null;
+            var boolean = (bool)value!;
+            if (boolean)
+            {
+                return "YES";
+            }
+
+            return "NO";
         }
     }
 }
