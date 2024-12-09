@@ -12,15 +12,5 @@ namespace MVVMDemo.MVVM.ViewModels
     {
         public ICommand ClickCommand =>
             new Command(() => App.Current.MainPage.DisplayAlert("Title", "message", "Ok"));
-
-        //public ICommand ClickCommand()
-        //{
-        //    Debug.Print("In ClickCommand");
-
-        //    return new Command(
-        //        () => App.Current.MainPage.DisplayAlert("Title", "message", "Ok")
-        //    );
-        //}
-            
     }
 }
