@@ -4,7 +4,7 @@ namespace MVVMDemo.MVVM.Views;
 
 public partial class CommandsView : ContentPage
 {
-	public CommandsView()
+    public CommandsView()
 	{
 		InitializeComponent();
 		BindingContext = new CommandsViewModel();

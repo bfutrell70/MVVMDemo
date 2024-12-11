@@ -16,9 +16,22 @@ namespace MVVMDemo.MVVM.ViewModels
             {
                 App.Current.MainPage.DisplayAlert("Title", "message", "Ok");
             });
+
+            //SearchCommand = new Command(() =>
+            //{
+            //    var data = SearchTerm;
+            //});
+            SearchCommand = new Command((s) =>
+            {
+                var data = s;
+            });
         }
 
         public ICommand ClickCommand { get;  }
+
+        public ICommand SearchCommand { get; }
+
+        public string SearchTerm { get; set; } = default!;
 
         //public ICommand ClickCommand =>
         //    new Command(() => App.Current.MainPage.DisplayAlert("Title", "message", "Ok"));
